@@ -1,4 +1,4 @@
-FROM 3.11.10-slim
+FROM python:3.11.10-slim-bookworm
 RUN apt-get update 
 WORKDIR /app
 COPY . .
