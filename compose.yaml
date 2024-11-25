@@ -2,8 +2,8 @@ services:
   web:
     environment:
       - PYTHONUNBUFFERED=1
-      - ENV FLASK_APP=app.py
-      - ENV FLASK_RUN_HOST=0.0.0.0
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
     build: .
     pull_policy: build
     ports:
