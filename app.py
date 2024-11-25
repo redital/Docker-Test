@@ -11,4 +11,5 @@ app = Flask(__name__)
 def hello():
     num = module.print_random()
     count = 1
+    print("questo me lo stampi?")
     return f'Hello World! I have been seen {count} times.\n Random generated number {num}'
