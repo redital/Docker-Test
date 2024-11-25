@@ -3,6 +3,8 @@ import time
 import redis
 from flask import Flask
 
+import module
+
 app = Flask(__name__)
 cache = redis.Redis(host='redis', port=6379)
 
@@ -19,5 +21,6 @@ def get_hit_count():
 
 @app.route('/')
 def hello():
+    module.print_random()
     count = get_hit_count()
     return f'Hello World! I have been seen {count} times.\n'
