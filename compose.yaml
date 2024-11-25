@@ -1,5 +1,7 @@
 services:
   web:
+    environment:
+      - PYTHONUNBUFFERED=1
     build: .
     pull_policy: build
     ports:
