@@ -21,6 +21,6 @@ def get_hit_count():
 
 @app.route('/')
 def hello():
-    module.print_random()
+    num = module.print_random()
     count = get_hit_count()
-    return f'Hello World! I have been seen {count} times.\n'
+    return f'Hello World! I have been seen {count} times.\n Random generated number {num}'
