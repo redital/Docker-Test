@@ -1,5 +1,5 @@
 import time
-
+import os
 from flask import Flask
 
 import module
@@ -18,4 +18,4 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(port=8033,debug=True)
+    app.run(port=8033,debug=True, host=os.environ["FLASK_RUN_HOST"])
