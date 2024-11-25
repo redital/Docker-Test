@@ -1,8 +1,8 @@
-# syntax=docker/dockerfile:1
-FROM python:3.10
-WORKDIR /usr/src/app
+FROM python:3.8-slim
+RUN apt-get update 
+WORKDIR /app
 COPY . .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
-CMD ["python3","main.py"]
+CMD ["python","main.py"]
 #CMD ["flask", "run", "--debug"]
