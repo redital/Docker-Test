@@ -4,6 +4,5 @@ WORKDIR /usr/src/app
 COPY . .
 RUN pip install -r requirements.txt
 EXPOSE 5000
-RUN cd ..
 CMD ["python3","main.py"]
 #CMD ["flask", "run", "--debug"]
