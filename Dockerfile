@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.11.9
 RUN apt-get update 
 WORKDIR /app
 COPY . .
