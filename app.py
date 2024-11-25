@@ -11,6 +11,8 @@ print("ECCOMI QUA")
 @app.route('/')
 def hello():
     print("ho ricevuto la chiamata")
+    print("host:",os.environ["FLASK_RUN_HOST"])
+    print("env:",os.environ)
     num = module.print_random()
     count = 1
     print("adesso ritorno")
