@@ -1,4 +1,4 @@
-FROM 3.11.10-slim-bookworm
+FROM 3.11.10-slim
 RUN apt-get update 
 WORKDIR /app
 COPY . .
