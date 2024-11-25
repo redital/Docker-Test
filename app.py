@@ -15,3 +15,7 @@ def hello():
     count = 1
     print("adesso ritorno")
     return f'Hello World! I have been seen {count} times.\n Random generated number {num}\n NO WAY FUNZIONA'
+
+
+if __name__ == '__main__':
+    app.run(port=8033,debug=True)
