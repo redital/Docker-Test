@@ -1,8 +1,8 @@
 FROM python:3.8-slim
 RUN apt-get update 
-WORKDIR /app/
+WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
-CMD ["python","main.py"]
+CMD ["python","app/main.py"]
 #CMD ["flask", "run", "--debug"]
