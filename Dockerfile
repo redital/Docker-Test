@@ -4,5 +4,6 @@ WORKDIR /content
 ADD . ./
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD ["python","/main.py"]
+RUN cd ..
+CMD ["python","main.py"]
 #CMD ["flask", "run", "--debug"]
