@@ -22,5 +22,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    socketio.init_app(async_mode="eventlet")
+    socketio.init_app(app, async_mode="eventlet")
     socketio.run(app,**config.flask_app_config)
