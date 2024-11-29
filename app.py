@@ -1,6 +1,8 @@
 import time
 import os
 from flask import Flask
+from events import socketio
+import config
 
 import module
 
@@ -20,4 +22,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(port=5000,debug=True, host=os.environ["FLASK_RUN_HOST"])
+    socketio.init_app(app)
+    socketio.run(app,**config.flask_app_config)
