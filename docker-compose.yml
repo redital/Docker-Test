@@ -3,7 +3,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - FLASK_APP=app.py
-      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_HOST=0.0.0.0
     build: .
     pull_policy: build
     ports:
