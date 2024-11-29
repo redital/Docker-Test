@@ -9,7 +9,7 @@ import module
 app = Flask(__name__)
 
 print("ECCOMI QUA")
-print("host:",os.environ["FLASK_RUN_HOST"])
+print("host:",os.environ["FLASK_HOST"])
 print("env:",os.environ)
 
 @app.route('/')
