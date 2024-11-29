@@ -22,5 +22,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    socketio.init_app(app)
+    socketio.init_app(app,cors_allowed_origins="*", engineio_logger=True)
     socketio.run(app,**config.flask_app_config)
