@@ -4,6 +4,7 @@ services:
       - PYTHONUNBUFFERED=1
       - FLASK_APP=app.py
       - FLASK_HOST=0.0.0.0
+      - FLASK_ENV=development
     build: .
     pull_policy: build
     ports:
